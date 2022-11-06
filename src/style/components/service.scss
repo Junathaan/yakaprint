@@ -1,0 +1,35 @@
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  @media screen and (max-width: $breakpoint-m) {
+    display: block;
+  }
+
+  &__icon {
+    flex: 0 0 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 200px;
+    margin-right: 3rem;
+
+    @media screen and (max-width: $breakpoint-m) {
+      margin: auto;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+
+  &__title,
+  &__description {
+    text-align: left;
+
+    @media screen and (max-width: $breakpoint-m) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.socials {
+  background-color: $primary;
+  color: white;
+  font-size: 3.6rem;
+  font-family: $font-family-headings;
+  letter-spacing: 0.750rem;
+
+  &__wrapper {
+    max-width: $container-small;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+
+  &__icon {
+    width: 4.6rem;
+    vertical-align: text-bottom;
+  }
+}

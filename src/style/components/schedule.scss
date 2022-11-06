@@ -1,0 +1,22 @@
+.schedule {
+  max-width: $container-small * 0.8;
+  padding: 1rem 6rem;
+  margin: auto;
+  border-left: 0.5rem solid $primary;
+  border-right: 0.5rem solid $primary;
+
+  &__title {
+    font-family: $font-family-headings;
+    letter-spacing: 0.750rem;
+    font-size: 1.4rem;
+  }
+  
+  &__subtitle {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__info {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,69 @@
+.job {
+  padding-top: 100px;
+
+  &__icon {
+    max-width: 300px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-family: $font-family-headings;
+    font-weight: 700;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    
+    @media screen and (max-width: $breakpoint-m) {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    max-width: 550px;
+    margin: 0 auto 4rem;
+  }
+
+  &__sectors {
+    display: flex;
+    position: relative;
+    max-width: $container-small;
+    padding: 1rem;
+    margin: auto;
+    justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint-m) {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      background-color: $primary;
+      z-index: -1;
+    }
+  }
+
+  &__sector {
+    color: white;
+  }
+
+  &__details {
+    text-align: left;
+    max-width: $container-small;
+    padding: 1rem;
+    margin: 2rem auto 6rem;
+  }
+
+  &__services {
+    max-width: $container-small;
+    margin: 2rem auto 6rem;
+    padding: 1rem;
+  }
+}

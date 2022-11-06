@@ -1,0 +1,16 @@
+.map {
+  background: url('/texture_bois.jpg');
+  background-size: cover;
+
+  &__wrapper {
+    max-width: $container;
+    margin: auto;
+    padding: 6rem 1rem;
+  }
+  
+  &__container {
+    width: 100%;
+    height: 40vh;
+    border: 1.5rem solid $primary;
+  }
+}

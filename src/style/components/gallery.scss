@@ -1,0 +1,23 @@
+.gallery {
+  padding: 4rem 2rem;
+  background-image: url("/texture_bois.jpg");
+  background-size: cover;
+  margin: 50px auto 0;
+  
+  &__wrapper {
+    max-width: $container;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1;
+    margin: 2rem;
+    box-shadow: 0 0 10px rgba($primary, 0.75);
+
+    @media screen and (max-width: $breakpoint-m) {
+      flex: 1 1 180px;
+    }
+  }
+}
