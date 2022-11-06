@@ -48,6 +48,12 @@ function logoPosition(logo: HTMLElement, spacer: HTMLElement) {
   logo.classList.add("active");
 }
 
+function resetLogoPosition(logo: HTMLElement) {
+  logo.classList.remove("active");
+  logo.style.left = "50%";
+  logo.style.top = window.outerWidth > 850 ? "8rem" : "4rem";
+}
+
 function closeNav(): void {
   const nav = document.querySelector(".header__nav") as HTMLElement;
 
@@ -70,9 +76,7 @@ function closeNav(): void {
       ([entry]) => {
         if (copy) {
           if (entry.isIntersecting) {
-            copy.classList.remove("active");
-            copy.style.left = "50%";
-            copy.style.top = "8rem";
+            resetLogoPosition(copy);
             return;
           }
 
@@ -105,6 +109,8 @@ function closeNav(): void {
     window.addEventListener("resize", () => {
       if (copy.classList.contains("active")) {
         logoPosition(copy, spacer);
+      } else {
+        resetLogoPosition(copy);
       }
 
       closeNav();
