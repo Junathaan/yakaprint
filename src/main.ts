@@ -51,7 +51,7 @@ function logoPosition(logo: HTMLElement, spacer: HTMLElement) {
 function resetLogoPosition(logo: HTMLElement) {
   logo.classList.remove("active");
   logo.style.left = "50%";
-  logo.style.top = window.outerWidth > 850 ? "8rem" : "4rem";
+  logo.style.top = window.innerWidth > 850 ? "8rem" : "4rem";
 }
 
 function closeNav(): void {
